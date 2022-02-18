@@ -3897,8 +3897,7 @@ checksum = "08cabc9f0066848fef4bc6a1c1668e6efce38b661d2aeec75d18d8617eebb5f1"
 [[package]]
 name = "winit"
 version = "0.26.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9b43cc931d58b99461188607efd7acb2a093e65fc621f54cad78517a6063e73a"
+source = "git+https://github.com/yjpark/winit/?branch=web-touch-event#5398176e5e81ab5fb7b8d7c72189f8e57f0f713b"
 dependencies = [
  "bitflags",
  "cocoa",
@@ -3911,9 +3910,9 @@ dependencies = [
  "libc",
  "log",
  "mio",
- "ndk 0.5.0",
- "ndk-glue 0.5.1",
- "ndk-sys 0.2.2",
+ "ndk 0.6.0",
+ "ndk-glue 0.6.1",
+ "ndk-sys 0.3.0",
  "objc",
  "parking_lot",
  "percent-encoding",
