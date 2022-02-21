@@ -21,6 +21,15 @@
       }
       canvas {
         background-color: white;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
       }
       #audio_enabler {
         display: none;
@@ -30,6 +39,8 @@
         bottom: 25vh;
         right: 25vw;
         background-color: gray;
+        text-align: center;
+        vertical-align: middle;
       }
       /* Safari 11+ */
       @media not all and (min-resolution:.001dpcm)
@@ -38,7 +49,6 @@
           display: block;
         }
       }}
-      /* Test website on real Safari 11+ */
     </style>
     <script src='https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js'></script>
     <script>
@@ -92,7 +102,7 @@
     </script>
   </head>
   <script type="module">
-    import init from './wasm.js'
+    import init from './target/wasm.js'
     init()
   </script>
   <div id="audio_enabler" onclick="enable_audio()" touchend="enable_audio()">
