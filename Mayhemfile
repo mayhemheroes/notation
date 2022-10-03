@@ -1,0 +1,6 @@
+project: notation
+target: notation-parser-fuzz
+
+cmds:
+    - cmd: ./notation-parser-fuzz
+      libfuzzer: true
